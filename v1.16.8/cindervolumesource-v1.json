@@ -16,7 +16,7 @@
       ]
     },
     "secretRef": {
-      "$ref": "https://raw.githubusercontent.com/sturman/kubernetes-json-schema/definitions/{version}/_definitions.json#/definitions/io.k8s.api.core.v1.LocalObjectReference",
+      "$ref": "https://raw.githubusercontent.com/sturman/kubernetes-json-schema/definitions/v1.16.8/_definitions.json#/definitions/io.k8s.api.core.v1.LocalObjectReference",
       "description": "Optional: points to a secret object containing parameters used to connect to OpenStack."
     },
     "volumeID": {

@@ -22,10 +22,10 @@
       ]
     },
     "metadata": {
-      "$ref": "https://raw.githubusercontent.com/sturman/kubernetes-json-schema/definitions/{version}/_definitions.json#/definitions/io.k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta"
+      "$ref": "https://raw.githubusercontent.com/sturman/kubernetes-json-schema/definitions/v1.17.6/_definitions.json#/definitions/io.k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta"
     },
     "spec": {
-      "$ref": "https://raw.githubusercontent.com/sturman/kubernetes-json-schema/definitions/{version}/_definitions.json#/definitions/io.k8s.api.settings.v1alpha1.PodPresetSpec"
+      "$ref": "https://raw.githubusercontent.com/sturman/kubernetes-json-schema/definitions/v1.17.6/_definitions.json#/definitions/io.k8s.api.settings.v1alpha1.PodPresetSpec"
     }
   },
   "type": "object",
