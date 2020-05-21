@@ -178,14 +178,7 @@ declare -a arr2=(
 for version in "${arr[@]}"
 do
 schema=https://raw.githubusercontent.com/kubernetes/kubernetes/${version}/api/openapi-spec/swagger.json
-prefix=https://kubernetesjsonschema.dev/${version}/_definitions.json
+prefix=https://raw.githubusercontent.com/sturman/kubernetes-json-schema/definitions/{version}/_definitions.json
 
-openapi2jsonschema -o "${version}-standalone-strict" --expanded --kubernetes --stand-alone --strict "${schema}"
-openapi2jsonschema -o "${version}-standalone" --expanded --kubernetes --stand-alone "${schema}"
-openapi2jsonschema -o "${version}-local" --expanded --kubernetes "${schema}"
 openapi2jsonschema -o "${version}" --expanded --kubernetes --prefix "${prefix}" "${schema}"
-openapi2jsonschema -o "${version}-standalone-strict" --kubernetes --stand-alone --strict "${schema}"
-openapi2jsonschema -o "${version}-standalone" --kubernetes --stand-alone "${schema}"
-openapi2jsonschema -o "${version}-local" --kubernetes "${schema}"
-openapi2jsonschema -o "${version}" --kubernetes --prefix "${prefix}" "${schema}"
 done
